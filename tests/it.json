@@ -1,5 +1,12 @@
 {
-    "SHARED": {},
-    "USER": {},
-    "ADMIN": {}
+    "SHARED": {
+        "SUBMIT_BUTTON_LABEL": "Invia",
+        "CANCEL_BUTTON_LABEL": "Annulla"
+    },
+    "USER": {
+        "TITLE": "User"
+    },
+    "ADMIN": {
+        "TITLE": "User"
+    }
 }

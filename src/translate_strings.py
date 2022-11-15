@@ -15,10 +15,16 @@ class TranslateString:
            def_text = out.text.split(';')[0]
            output_map.append((def_text, l))
         return output_map
-           
+    
+    def translate_dict(self, data: dict, lang: str = 'en') -> dict:
+        new_data = data
+        for first_key in data:
+            for k, v in data[first_key].items():
+                new_value = self.translate_one(v, lang)
+                new_data[first_key][k] = new_value
+        return new_data
 
-trans = TranslateString('it')
-lang_list = ['en', 'es', 'de', 'fr', 'zh-tw', 'ja', 'ko', 'hi', 'th']
-out = trans.translate_more('accedi', lang_list)
-for _ in out:
-    print(f'{_[0]} -> {_[1]}')
+        
+                
+                
+
