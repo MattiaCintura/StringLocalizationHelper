@@ -1,5 +1,23 @@
 {
-    "SHARED": {},
-    "USER": {},
-    "ADMIN": {}
+  "SHARED": {
+    "SUBMIT_BUTTON_LABEL": "Soumettre",
+    "CANCEL_BUTTON_LABEL": "Annuler"
+  },
+  "HOMEPAGE": {
+    "GREETING": "Salut mon pote",
+    "FAVORITES": "Favoris"
+  },
+  "MAP": {
+    "TITLE": "Carte",
+    "LOCATION_PERMISSION": "Activer la localisation",
+    "SEARCH_LOCATION": "À proximité",
+    "ADD_LOCATION": "Ajouter",
+    "SHARE_LOCATION": "Partager"
+  },
+  "SETTINGS": {
+    "TITLE": "Réglages",
+    "GENERAL": "Généraux",
+    "NOTIFICATIONS": "Avis",
+    "DELETE_ACCOUNT": "Supprimer le compte"
+  }
 }

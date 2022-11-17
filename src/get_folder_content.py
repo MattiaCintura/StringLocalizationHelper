@@ -20,7 +20,8 @@ class GetFolderContent:
             "de": "🇩🇪 ",
             "zh": "🇨🇳 ",
             "zh-TW": "🇹🇼 ",
-            "jp": "🇯🇵 "
+            "jo": "🇯🇵 ",
+            "ko": "🇰🇷 "
         }
         for file in sorted(os.listdir(self.current_path)):
             if ".json" in file:

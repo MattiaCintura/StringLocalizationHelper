@@ -21,7 +21,7 @@ class TranslateString:
         for first_key in data:
             for k, v in data[first_key].items():
                 new_value = self.translate_one(v, lang)
-                new_data[first_key][k] = new_value
+                new_data[first_key][k] = new_value.capitalize()
         return new_data
 
         

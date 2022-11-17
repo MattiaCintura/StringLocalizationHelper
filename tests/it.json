@@ -3,10 +3,21 @@
         "SUBMIT_BUTTON_LABEL": "Invia",
         "CANCEL_BUTTON_LABEL": "Annulla"
     },
-    "USER": {
-        "TITLE": "User"
+    "HOMEPAGE": {
+        "GREETING": "Ciao amico",
+        "FAVORITES": "Preferiti"
     },
-    "ADMIN": {
-        "TITLE": "User"
+    "MAP": {
+        "TITLE": "Mappa",
+        "LOCATION_PERMISSION": "Abilita localizzazione",
+        "SEARCH_LOCATION": "Cerca",
+        "ADD_LOCATION": "Aggiungi",
+        "SHARE_LOCATION": "Condividi"
+    },
+    "SETTINGS": {
+        "TITLE": "Impostazioni",
+        "GENERAL": "Generali",
+        "NOTIFICATIONS": "Notifiche",
+        "DELETE_ACCOUNT": "Elimina account"
     }
 }

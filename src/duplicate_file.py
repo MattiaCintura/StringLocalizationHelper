@@ -9,5 +9,5 @@ class DuplicateFile:
             return json.load(f)
         
     def save_file(self, data: dict, filename: str = 'new_file.json'):
-        with open(filename, 'w') as nf:
-            json.dump(data, nf, indent=2)
+        with open(f'../tests/{filename}', 'w', encoding='utf8') as nf:
+            json.dump(data, nf, indent=2, ensure_ascii=False)
