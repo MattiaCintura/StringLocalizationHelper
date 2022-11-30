@@ -15,6 +15,12 @@ class TranslateString:
            def_text = out.text.split(';')[0]
            output_map.append((def_text, l))
         return output_map
+
+    def get_all_keys(self, d: dict):
+        for key, value in d.items():
+            yield key
+            if isinstance(value, dict):
+                yield from self.get_all_keys(value)
     
     def translate_dict(self, data: dict, lang: str = 'en') -> dict:
         new_data = data
@@ -23,8 +29,3 @@ class TranslateString:
                 new_value = self.translate_one(v, lang)
                 new_data[first_key][k] = new_value.capitalize()
         return new_data
-
-        
-                
-                
-
