@@ -16,11 +16,12 @@ class TranslateString:
            output_map.append((def_text, l))
         return output_map
 
-    def get_all_keys(self, d: dict):
-        for key, value in d.items():
-            yield key
+    def get_all_keys(self, data: dict):
+        for key, value in data.items():
             if isinstance(value, dict):
-                yield from self.get_all_keys(value)
+                self.get_all_keys(value)
+            else:
+                print(value)
     
     def translate_dict(self, data: dict, lang: str = 'en') -> dict:
         new_data = data
